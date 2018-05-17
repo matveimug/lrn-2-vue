@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LRN 2 VUE</title>
+</head>
+<body>
+<div id="app">
+  <button v-on:click="increase(2, $event)">Click meeh</button>
+  <p>{{ counter }}</p>
+  <p v-on:mousemove="updateCoords">
+    coords: {{ x }} / {{ y }}
+     - <span v-on:mousemove.stop.prevent="">DEAD SPOT</span>
+  </p>
+  <input type="text" v-on:keyup.enter.space="alertme">
+</div>
+<script src="../vue.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
