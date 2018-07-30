@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LRN 2 VUE</title>
+</head>
+<body>
+<div id="app">
+  <ul>
+    <li v-for="(boop, i) in ingredients" :key="ingredient">{{ boop }} ({{ i }})</li>
+  </ul>
+  <button @click="ingredients.push('spices')">ADD</button>
+  <hr>
+  <ul>
+    <li v-for="person in persons">
+      <div v-for="(value, key, index) in person">{{ key }}: {{ value }} ({{index}})</div>
+    </li>
+  </ul>
+  <hr>
+  <span v-for="n in 10">{{ n }}</span>
+  <hr>
+  <template v-for="(boop, i) in ingredients">
+  <h1>{{ boop }}</h1>
+  <p>({{ i }})</p>
+  </template>
+</div>
+<script src="../vue.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

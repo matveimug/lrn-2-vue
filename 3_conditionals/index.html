@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LRN 2 VUE</title>
+</head>
+<body>
+<div id="app">
+  <p v-if="show">You can see me! <span>helo</span></p>
+  <p v-else="show">now you see me</p>
+  <template v-if="show">
+    <h1>Heading</h1>
+    <p>Inside a template</p>
+  </template>
+  <p v-show="show">do you see me?</p>
+  <button @click="show = !show">switch</button>
+</div>
+<script src="../vue.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
