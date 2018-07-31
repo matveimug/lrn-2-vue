@@ -7,6 +7,9 @@
           <mappings>
             <mapping deploy="/public_html/misc/lrn-2-vue" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/vue-cli/node_modules" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
