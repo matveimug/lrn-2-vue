@@ -1,1 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
+.babelrc
+.editorconfig
+.gitignore
+README.md
+index.html
+package-lock.json
+package.json
+src/
+webpack.config.js
